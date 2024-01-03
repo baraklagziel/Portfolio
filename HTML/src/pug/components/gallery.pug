@@ -1,0 +1,109 @@
+-
+  var portfolio = [
+    {
+      img: imgAPI.unisex[6],
+      title: 'Illustration Collection 2021',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat1'
+    },
+    {
+      img: imgAPI.unisex[7],
+      title: 'IFF - Branding & Website',
+      link: 'linkofthisitem.com',
+      size: 'long',
+      category: 'cat2'
+    },
+    {
+      img: imgAPI.unisex[8],
+      title: 'Personal Works',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat3'
+    },
+    {
+      img: imgAPI.unisex[9],
+      title: 'Lay-Out / Art book',
+      link: 'linkofthisitem.com',
+      size: 'long',
+      category: 'cat1'
+    },
+    {
+      img: imgAPI.unisex[10],
+      title: 'France Universités - Brand design',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat2'
+    },
+    {
+      img: imgAPI.unisex[11],
+      title: 'U. Furstenberg - Identity & stationery',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat3'
+    },
+    {
+      img: imgAPI.unisex[12],
+      title: 'NUEN - Brand Identity',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat1'
+    },
+    {
+      img: imgAPI.unisex[14],
+      title: 'Coffee Fields Forever',
+      link: 'linkofthisitem.com',
+      size: 'short',
+      category: 'cat2'
+    },
+    {
+      img: imgAPI.unisex[13],
+      title: 'ANTA2022',
+      link: 'linkofthisitem.com',
+      size: 'long',
+      category: 'cat2'
+    }
+  ]
+
+include cards/image-thumb.pug
+include title
+
+.root
+  .container
+    +title-main
+      | #{$t.unisex_landing.gallery_title} 
+      strong #{$t.unisex_landing.gallery_titleBold}
+    .hidden-xs-down
+      .filter
+        |
+        |
+        button.btn.waves-effect.selected(data-filter="all") All
+        |
+        |
+        button.btn.waves-effect(data-filter="cat1") Category 1
+        |
+        |
+        button.btn.waves-effect(data-filter="cat2") Category 2
+        |
+        |
+        button.btn.waves-effect(data-filter="cat3") Category 3
+        |
+        |
+        button.btn.waves-effect(data-filter="cat4") Category 4
+        |
+        |
+        button.btn.waves-effect(data-filter="cat5") Category 5
+        |
+        |
+    .hidden-xs-down
+      .massonry#image_gallery
+        each item, index in portfolio
+          .item.loaded(data-category=item.category style="transition-duration:" + index / 8 + "s")
+            .wow.fadeInUpShort(data-wow-offset='100' data-wow-delay='0.2s' data-wow-duration='0.3s')
+              +image-thumb(item.img, item.title, item.link, item.size)
+      p#no_data.overline.text-center.hide #{$t.unisex_landing.gallery_nodata}
+    .hidden-sm-up
+      .slick-carousel#gallery_carousel
+        each item in portfolio
+          .item-carousel(data-category=item.category)
+            +image-thumb(item.img, item.title, item.link, item.size)

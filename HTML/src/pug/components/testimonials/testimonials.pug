@@ -1,0 +1,190 @@
+include ../title.pug
+include avatar-buble.pug
+
+-
+  var testiData = [
+    {
+      avatar: imgAPI.avatar[0],
+      name: 'John Doe',
+      title: 'Company Dot Com',
+      text: 'Excellent after-sales service, responds quickly to doubts, helps in solving problems and the source code is very good. Congratulations !!!',
+      x: 100,
+      y: 150
+    },
+    {
+      name: 'Barak Lagziel Lagziel',
+      title: 'Waluyo Global Service',
+      text: 'He fixed the security problems . Thank you very much .',
+      x: 120,
+      y: 100
+    },
+    {
+      name: 'Jack Doe',
+      title: 'Ismajin',
+      text: 'Superb!!!, very well done, easily extensible, works at first try, many thanks',
+      x: 400,
+      y: 40
+    },
+    {
+      avatar: imgAPI.avatar[3],
+      name: 'Josh Doe',
+      title: 'Icikipriw.com',
+      text: 'Really stands out from the others, excellent design quality and customer support!!',
+      x: 500,
+      y: 300
+    },
+    {
+      avatar: imgAPI.avatar[4],
+      name: 'Jota Doe',
+      title: 'Company Dot Com',
+      text: 'Very well coded, took me a while to understand it but now this is my go to template for every project.',
+      x: 270,
+      y: 220
+    },
+    {
+      name: 'Joao Doe',
+      title: 'Company Dot Net',
+      text: 'I chose other because there are many reasons, I would recommend this template to somebody else.',
+      x: 100,
+      y: 200
+    },
+    {
+      avatar: imgAPI.avatar[6],
+      name: 'John Doe',
+      title: 'Indisains',
+      text: 'It\'s an excellent code, very complete and well structured.',
+      x: 100,
+      y: 40
+    },
+    {
+      name: 'Jeslyn Doe',
+      title: 'uInstument Inc',
+      text: 'The code, the design, the regular updates, the support...it\'s the full package.',
+      x: 330,
+      y: 100
+    },
+    {
+      avatar: imgAPI.avatar[1],
+      name: 'Jim Doe',
+      title: 'UX Maestro',
+      text: 'The services are high quality, excellent code, and easy to use. Thanks!',
+      x: 30,
+      y: 50
+    },
+    {
+      avatar: imgAPI.avatar[9],
+      name: 'Barak Lagziel Lagziel',
+      title: 'Semprul.com',
+      text: 'it is flexible and the customer support is good',
+      x: 400,
+      y: 150
+    },
+    {
+      name: 'Jayna Doe',
+      title: 'Molotot.com',
+      text: 'Excellent for a quick HTML slicing',
+      x: 480,
+      y: 100
+    },
+    {
+      name: 'Jihan Doe',
+      title: 'Extrolux Corp.',
+      text: 'High quality service. Pleased with the package. Thank you!',
+      x: 250,
+      y: 100
+    },
+    {
+      avatar: imgAPI.avatar[2],
+      name: 'Jean Doe',
+      title: 'Design.net',
+      text: 'Very good for the purpose, just wish i could have more options but still a good service.',
+      x: 150,
+      y: 300
+    },
+    {
+      avatar: imgAPI.avatar[7],
+      name: 'Jering Doe',
+      title: 'ABC123 Radio',
+      text: 'Your customer service support response is swift and friendly. I appreciate your timely response.',
+      x: 300,
+      y: 140
+    },
+    {
+      name: 'Johan Doe',
+      title: 'Code Symfoni Studio',
+      text: 'The design it\'s very awesome and simple, im totally new on react but it is easy to understand.',
+      x: 480,
+      y: 280
+    },
+    {
+      avatar: imgAPI.avatar[5],
+      name: 'Jonas Doe',
+      title: 'jonas.com',
+      text: 'This is the best react js development for admin dashbaord',
+      x: 300,
+      y: 300
+    }
+  ]
+
+.container.fixed-width-md-up
+  .wow.fadeInUpShort(data-wow-offset='100' data-wow-delay='0.2s' data-wow-duration='0.3s')
+    .root
+      +title-main(true)
+        | #{$t.unisex_landing.testi_title} 
+        strong #{$t.unisex_landing.testi_titleBold}
+      .row
+        .col-md-7.px-0
+          .world-map
+            .hidden-xs-down
+              .avatar-wrap
+                each item in testiData
+                  .avatar-item(
+                    tabindex="0"
+                    role="button"
+                    data-placement="top"
+                    style="left:"+item.x+"px; top:"+item.y+"px"
+                    data-html="true"
+                    data-toggle="popover"
+                    data-trigger="hover focus"
+                    data-content="<div class='paper-block'><p class='pb-2'>"+item.text+"</p><h6>"+item.name+"</h6><p class='title'>"+item.title+"</p></div>"
+                  )
+                    +avatar-buble(item.avatar, item.name)
+            .hidden-sm-up
+              .slick-carousel#testimonial_carousel
+                each item in testiData
+                  .item-carousel
+                    .card
+                      p.body-1 #{item.text}
+                      .name
+                        if item.avatar
+                          .avatar-img
+                            |
+                            |
+                            img(src=item.avatar alt='item.name')/
+                            |
+                            |
+                        else
+                          .avatar-img.grey
+                            |
+                            |
+                            strong.white--text.headline #{item.name.charAt(0)}
+                            |
+                            |
+                        |
+                        |
+                        span.caption #{item.name}
+                        |
+                        |
+        .col-md-5.pe-md-10
+          .text
+            .wow.fadeInUpShort(data-wow-offset='-200' data-wow-delay='0.2s' data-wow-duration='0.3s')
+              h3.use-text-title2 #{$t.unisex_landing.testi_title2}
+            .wow.fadeInUpShort(data-wow-offset='-200' data-wow-delay='0.3s' data-wow-duration='0.3s')
+              div
+                p.use-text-paragraph #{$t.unisex_landing.testi_desc}
+                |
+                |
+                a.btn.btn-large.primary.button.waves-effect(href="#contact")
+                  | #{$t.unisex_landing.testi_button}
+                |
+                |
