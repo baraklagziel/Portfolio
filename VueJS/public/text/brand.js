@@ -2,7 +2,7 @@ import imgAPI from '~/public/images/imgAPI';
 
 const brand = {
   unisex: {
-    name: 'Barak Lagziel Lagziel',
+    name: 'Barak Lagziel',
     title: 'Software Engineer',
     desc: 'Iluxi Profile - React Single Landing Page Template',
     prefix: 'Iluxi',

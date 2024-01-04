@@ -56,9 +56,9 @@ function Timeline(props) {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Creative Director</Typography>
-                        <Typography gutterBottom>at Fourth Company</Typography>
-                        <Typography className={classes.time}>2015 - Present</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Nice Actimize</Typography>
+                        <Typography gutterBottom>As Software Engineer</Typography>
+                        <Typography className={classes.time}>2021 - Present</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -71,9 +71,9 @@ function Timeline(props) {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Senior UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Third Company</Typography>
-                        <Typography className={classes.time}>2013 - 2015</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>PetSmart</Typography>
+                        <Typography gutterBottom>As Software Engineer</Typography>
+                        <Typography className={classes.time}>2020 - 2021</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -86,9 +86,9 @@ function Timeline(props) {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Second Company</Typography>
-                        <Typography className={classes.time}>2012 - 2013</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Asperii</Typography>
+                        <Typography gutterBottom>As Software Engineer</Typography>
+                        <Typography className={classes.time}>2019 - 2020</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>
@@ -101,9 +101,9 @@ function Timeline(props) {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at First Company</Typography>
-                        <Typography className={classes.time}>2009 - 2011</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Asperii</Typography>
+                        <Typography gutterBottom>Computer Science student</Typography>
+                        <Typography className={classes.time}>2017 - 2020</Typography>
                       </div>
                     </ScrollAnimation>
                   </li>

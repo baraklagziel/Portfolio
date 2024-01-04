@@ -37,7 +37,6 @@ const sideNavIconStyles = makeStyles(theme => ({
   },
   text: {
     transition: 'all 0.3s cubic-bezier(0, 1.73, 1, 1.02)',
-    position: 'relative',
     color: theme.palette.common.white,
     visibility: 'hidden',
     position: 'absolute',
