@@ -101,8 +101,9 @@ function Timeline(props) {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Asperii</Typography>
-                        <Typography gutterBottom>Computer Science student</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Computer Science student</Typography>
+                        <Typography gutterBottom>At The Academic College of Tel Aviv–Yaffo</Typography>
+                        <Typography gutterBottom>Grade <b>87</b></Typography>
                         <Typography className={classes.time}>2017 - 2020</Typography>
                       </div>
                     </ScrollAnimation>
