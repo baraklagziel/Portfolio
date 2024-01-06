@@ -141,7 +141,7 @@ function Timeline(props) {
                     <li>
                       <div className={classes.textIcon}>
                         <i className="ion-logo-dribbble" />
-                        <Typography variant="h6" className={text.subtitle2}>Cloud development</Typography>
+                        <Typography variant="h6" className={text.subtitle2}>Cloud Development</Typography>
                       </div>
                       <LinearProgress
                         variant="determinate"

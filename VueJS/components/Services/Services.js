@@ -20,7 +20,7 @@ const services = [
   },
   {
     icon: 'ion-logo-dribbble',
-    name: 'Cloud development',
+    name: 'Cloud Development',
     desc: 'Pellentesque ac  vel blandit nulla.'
   },
   {
