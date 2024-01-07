@@ -45,7 +45,7 @@ function About(props) {
                   <figure>
                     <img src="/images/unisex/reward3.svg" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>4k Subscribers</Typography>
+                  <Typography component="p" className={text.paragraph}>4K Subscribers</Typography>
                   <Typography variant="h5" className={text.subtitle}>LINKEDIN</Typography>
                 </div>
               </div>
