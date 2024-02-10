@@ -182,7 +182,7 @@ function Header(props) {
                         {brand.unisex.title}
                       </Typography>
                     </div>
-                    <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
+                    <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV1</Button>
                     <div className={classes.socmed}>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className={clsx('ion-logo-facebook', classes.fb)} />

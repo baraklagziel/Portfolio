@@ -24,7 +24,7 @@ mixin header(invert)
           .logo(class= !invert && "scrollnav")
             |
             |
-            a(href=invert ? link.unisex.home : "#home")
+            a(href=invert ? link.unisex.home: "#home")
               img(
                 src=assets + brand.unisex.img
                 alt="logo"
@@ -45,7 +45,7 @@ mixin header(invert)
                   each item, index in menu.unisex
                     li(style="animation-duration: "+(Number(index + 1)) * 0.25 + 's')
                       a.btn-flat.waves-effect(
-                        href=invert ? 'index.html#'+item.name : '#'+item.name
+                        href=invert ? 'index.html#'+item.name: '#'+item.name
                       ) #{$t.unisex_landing['header_'+item.name]}
           .col-sm-6
             .detail
@@ -56,7 +56,7 @@ mixin header(invert)
                 h4.use-text-subtitle #{brand.unisex.title}
                 |
                 |
-                a.btn-outlined.primary.waves-effect.download(href="#") Download CV
+                a.btn-outlined.primary.waves-effect.download(href="#") Download CV1
                 |
                 |
               .socmed
