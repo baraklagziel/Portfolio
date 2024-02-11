@@ -1,7 +1,7 @@
 {
 	"name": "unisex-theme",
 	"version": "1.0.0",
-	"description": "Iluxi ReactJs Profile and Portfolio Theme",
+	"description": "Barak ReactJs Profile and Portfolio Theme",
 	"keywords": [
 		"profile",
 		"portfolio",
@@ -9,7 +9,7 @@
 		"personal",
 		"showcase"
 	],
-	"author": "Iluxi Theme",
+	"author": "Barak Theme",
 	"license": "ilhammeidi",
 	"main": "index.js",
 	"private": true,

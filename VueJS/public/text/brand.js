@@ -6,7 +6,7 @@ const brand = {
     title: 'Software Engineer',
     desc: 'Barak Lagziel Profile - React Single Landing Page Template',
     prefix: 'Iluxi',
-    footerText: 'Iluxi Theme 2022',
+    footerText: 'Barak Theme 2022',
     logoText: 'Barak Lagziel Profile',
     projectName: 'Profile',
     url: 'Iluxi.ux-maestro.com/profile',
