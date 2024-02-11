@@ -1042,7 +1042,7 @@ body {
 }
 
 .btn-outlined.primary {
-  color: var(--v-primary-base) !important;
+  color: #f8f9fa !important;
   border-color: var(--v-primary-base);
 }
 
@@ -11802,7 +11802,7 @@ body {
   margin-top: -140px;
   background: #FFF;
   width: 270px;
-  height: 345px;
+  height: 350px;
   overflow: visible;
 }
 
@@ -11829,20 +11829,15 @@ body {
 
 #about .frame {
   position: absolute;
-  width: 90%;
-  top: 16px;
-  height: 105%;
-  border: 2px solid transparent;
+  width: 85%;
+  top: 12px;
+  height: 106%;
+  border: 4px solid transparent;
   background: -o-linear-gradient(330deg, var(--v-secondary-base), var(--v-primary-base)) border-box;
   background: linear-gradient(120deg, var(--v-secondary-base), var(--v-primary-base)) border-box;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  /*5'*/
   mask-composite: exclude;
-  /*5*/
-  z-index: 5;
-  border-radius: 20px;
+  z-index: 16;
+  border-radius: 11px;
 }
 
 [dir=ltr] #about .frame {
@@ -14941,8 +14936,16 @@ body {
 }
 
 #testimonials .card .avatar {
-  width: 30px;
-  height: 30px;
+  width: 100px;  /* adjust as needed */
+  height: 100px; /* adjust as needed */
+}
+
+#testimonials .card .avatar1 {
+  opacity: 1; /* Fully opaque */
+  display: block; /* Removes any default inline spacing */
+  width: 100%; /* Ensures image stretches to the width of its container */
+  height: auto; /* Keeps the image's aspect ratio */
+  object-fit: cover;
 }
 
 #testimonials .name {
