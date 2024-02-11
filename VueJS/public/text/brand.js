@@ -4,10 +4,10 @@ const brand = {
   unisex: {
     name: 'Barak Lagziel',
     title: 'Software Engineer',
-    desc: 'Iluxi Profile - React Single Landing Page Template',
+    desc: 'Barak Lagziel Profile - React Single Landing Page Template',
     prefix: 'Iluxi',
     footerText: 'Iluxi Theme 2022',
-    logoText: 'Iluxi Profile',
+    logoText: 'Barak Lagziel Profile',
     projectName: 'Profile',
     url: 'Iluxi.ux-maestro.com/profile',
     img: '/images/unisex-logo.png',
