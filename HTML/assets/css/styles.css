@@ -1251,9 +1251,6 @@ body {
   padding-right: 8px;
 }
 
-.input-field input:-internal-autofill-selected {
-  background-color: transparent !important;
-}
 
 .input-field.primary input:not([type]):focus:not([readonly]), .input-field.primary input[type=text]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=password]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=email]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=url]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=time]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=date]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=datetime]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=tel]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=number]:not(.browser-default):focus:not([readonly]), .input-field.primary input[type=search]:not(.browser-default):focus:not([readonly]), .input-field.primary textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom-color: var(--v-primary-base);
@@ -1313,12 +1310,6 @@ body {
 
 .theme--dark .pace .pace-progress {
   background-color: #424242;
-}
-
-.justify-content-evenly {
-  -webkit-box-pack: space-evenly !important;
-  -ms-flex-pack: space-evenly !important;
-  justify-content: space-evenly !important;
 }
 
 .theme--light .dropdown-divider {
@@ -11839,7 +11830,33 @@ body {
   z-index: 16;
   border-radius: 11px;
 }
+.title-main {
+  text-align: center; /* Centers the text within the div */
+  margin: 20px 0; /* Adds vertical spacing for better separation from other elements */
+}
 
+.title-main h4 {
+  color: #333; /* Elegant dark grey */
+  font-size: 24px; /* Suitable heading size */
+  margin: 0; /* Removes default margin */
+  padding-bottom: 10px; /* Adds a little space below the heading */
+}
+
+.title-main .in-process {
+  color: #777; /* Subtle light grey */
+  font-style: italic; /* Stylish italic for the 'In Process...' text */
+  font-size: 18px; /* Slightly smaller than the heading, but still noticeable */
+  margin-top: 0; /* Adjusts spacing to your liking */
+}
+
+
+/* Styles that apply when the screen width is 600px or less */
+@media (max-width: 500px) {
+  .frame {
+    width: 160px;
+    height: 235px;
+  }
+}
 [dir=ltr] #about .frame {
   left: 5%;
 }
@@ -11858,8 +11875,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
@@ -13092,7 +13107,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.87);
   white-space: nowrap;
   min-width: 100px;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-flex: 0;
@@ -15424,10 +15438,6 @@ body {
 
 .deco-wrap {
   position: relative;
-}
-
-.deco-wrap.bottom ::v-deep .inner-parallax {
-  top: -1500px;
 }
 
 .bottom-deco {
