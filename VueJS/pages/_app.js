@@ -27,7 +27,7 @@ import '../vendors/slick/slick-theme.css';
 
 let themeType = 'dark';
 if (typeof Storage !== 'undefined') { // eslint-disable-line
-  themeType = localStorage.getItem('luxiTheme') || 'dark';
+  themeType = localStorage.getItem('baraklagzielTheme') || 'dark';
 }
 
 function MyApp(props) {
@@ -62,7 +62,7 @@ function MyApp(props) {
 
   const toggleDarkTheme = () => {
     const newPaletteType = theme.palette.type === 'light' ? 'dark' : 'light';
-    localStorage.setItem('luxiTheme', theme.palette.type === 'light' ? 'dark' : 'light');
+    localStorage.setItem('baraklagzielTheme', theme.palette.type === 'light' ? 'dark' : 'light');
     setTheme({
       ...appTheme('uni', newPaletteType),
       direction: theme.direction,

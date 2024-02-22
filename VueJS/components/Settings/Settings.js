@@ -20,7 +20,7 @@ import useStyles from './settings-style';
 
 let themeType = 'light';
 if (typeof Storage !== 'undefined') {
-  themeType = localStorage.getItem('luxiTheme') || 'light';
+  themeType = localStorage.getItem('baraklagzielTheme') || 'light';
 }
 
 function Settings(props) {
