@@ -11852,10 +11852,21 @@ body {
 
 /* Styles that apply when the screen width is 600px or less */
 @media (max-width: 500px) {
-  .frame {
-    width: 160px;
-    height: 235px;
+  .frame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
+}
+
+/* If you want to keep a fixed aspect ratio */
+.frame {
+  width: 160px; /* You can keep this if you want a fixed width */
+}
+
+.frame img {
+  height: auto;
+  object-fit: cover; /* This will ensure the image covers the area */
 }
 [dir=ltr] #about .frame {
   left: 5%;
